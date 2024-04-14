@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="¡Encuentra la imagen correcta! Juego de Identificación de Imágenes para niños con autismo. Pon a prueba tus habilidades y diviértete identificando las imágenes correctas.">
+    <title>Juego de Identificación de Imágenes</title>
+    <link rel="stylesheet" href="styleJuego.css">
+</head>
+
+<body>
+    <header>
+        <h1>Identificación de Imágenes</h1>
+    </header>
+    <main>
+        <section>
+            <h2>¡Encuentra la imagen correcta!</h2>
+            <div id="nivel-1" class="nivel">
+                <h3>¿Cuál es la imágenes es correcta?</h3>
+                <div class="image-container">
+                    <div class="image-option">
+                        <img src="ImagenesJuego/Nivel1Falso.PNG" alt="Opción falsa 1">
+                        <div class="option-container">
+                            <button class="option" onclick="checkAnswer(1)">Opción 1</button>
+                        </div>
+                    </div>
+                    <div class="image-option">
+                        <img src="ImagenesJuego/Nivel1Falso2.PNG" alt="Opción falsa 2">
+                        <div class="option-container">
+                            <button class="option" onclick="checkAnswer(2)">Opción 2</button>
+                        </div>
+                    </div>
+                    <div class="image-option">
+                        <img src="ImagenesJuego/Nivel1Verdadero.PNG" alt="Opción verdadera">
+                        <div class="option-container">
+                            <button class="option" onclick="checkAnswer(3)">Opción 3</button>
+                        </div>
+                    </div>
+                </div>
+                <p id="result-message"></p>
+                <button id="next-button" onclick="nextLevel()" style="display: none;">Siguiente Nivel</button>
+            </div>
+            <div id="nivel-2" class="nivel" style="display: none;">
+                <h3>¿Cuál de estas imágenes es la correcta?</h3>
+                <div class="image-container">
+                    <div class="image-option">
+                        <img src="ImagenesJuego/Nivel2Verdadero.PNG" alt="Opción verdadera">
+                        <div class="option-container">
+                            <button class="option" onclick="checkAnswer(1)">Opción 1</button>
+                        </div>
+                    </div>
+                    <div class="image-option">
+                        <img src="ImagenesJuego/Nivel2Falso.PNG" alt="Opción falsa 1">
+                        <div class="option-container">
+                            <button class="option" onclick="checkAnswer(2)">Opción 2</button>
+                        </div>
+                    </div>
+                    <div class="image-option">
+                        <img src="ImagenesJuego/Nivel2Falso2.PNG" alt="Opción falsa 2">
+                        <div class="option-container">
+                            <button class="option" onclick="checkAnswer(3)">Opción 3</button>
+                        </div>
+                    </div>
+                </div>
+                <p id="result-message"></p>
+                <button id="next-button" onclick="nextLevel()" style="display: none;">Siguiente Nivel</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>ProgramAccess &copy; 2023</p>
+    </footer>
+    <script>
+        // Inicialización de variables
+        var nivelActual = 1;
+        var nivelesTotales = 2;
+
+        // Función que se llama cuando se verifica una respuesta
+        function checkAnswer(option) {
+            var nivelActualElement = document.getElementById("nivel-" + nivelActual);
+            var options = nivelActualElement.getElementsByClassName("option");
+            var resultMessage = nivelActualElement.querySelector("#result-message");
+            var nextButton = nivelActualElement.querySelector("#next-button");
+
+            // Deshabilita todos los botones de opción para evitar selecciones múltiples
+            for (var i = 0; i < options.length; i++) {
+                options[i].disabled = true;
+            }
+
+            // Comprueba si la respuesta es correcta según el nivel actual
+            if (nivelActual === 1) {
+                if (option === 3) {
+                    resultMessage.innerText = "¡Respuesta correcta!";
+                    resultMessage.style.color = "black";
+                } else {
+                    resultMessage.innerText = "Respuesta incorrecta. Intenta nuevamente.";
+                    resultMessage.style.color = "gray";
+                }
+            } else if (nivelActual === 2) {
+                if (option === 1) {
+                    resultMessage.innerText = "¡Respuesta correcta!";
+                    resultMessage.style.color = "black";
+                } else {
+                    resultMessage.innerText = "Respuesta incorrecta. Intenta nuevamente.";
+                    resultMessage.style.color = "gray";
+                }
+            }
+
+            // Si es el último nivel, cambia el texto del botón "Siguiente Nivel" a "Inicio" y establece una redirección
+            if (nivelActual === nivelesTotales) {
+                nextButton.innerText = "Inicio";
+                nextButton.onclick = function () {
+                    window.location.href = "ProyectoDis.html";
+                };
+            }
+
+            // Muestra el botón "Siguiente Nivel" para avanzar
+            nextButton.style.display = "block";
+        }
+
+        // Función que se llama al pasar al siguiente nivel
+        function nextLevel() {
+            var nivelActualElement = document.getElementById("nivel-" + nivelActual);
+            var nivelSiguienteElement = document.getElementById("nivel-" + (nivelActual + 1));
+
+            // Oculta el nivel actual
+            nivelActualElement.style.display = "none";
+
+            if (nivelSiguienteElement) {
+                // Muestra el siguiente nivel
+                nivelSiguienteElement.style.display = "block";
+                nivelActual++;
+            } else {
+                // Redirige al inicio
+                window.location.href = "ProyectoDis.html";
+            }
+        }
+    </script>
+    <a class="corner-link" href="http://www.w3.org/WAI/WCAG1A-Conformance"
+        title="Explicación del Nivel A de Conformidad">
+        <img height="32" width="88" src="http://www.w3.org/WAI/wcag1A" alt="Icono de conformidad con el Nivel A, 
+        de las Directrices de Accesibilidad para el Contenido Web 1.0 del W3C-WAI">
+    </a>
+</body>
+
+</html>

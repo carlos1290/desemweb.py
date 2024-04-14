@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicios</title>
+  <link rel="stylesheet" href="stylesInterfaz.css">
+  <script src="ScriptsEjercicios/scriptsAvanzado.js"></script>
+</head>
+
+<body>
+  <div class="exercise-container">
+    <div class="exercise-title" id="exerciseTitle"></div>
+    <div class="exercise-description" id="exerciseDescription"></div>
+    <div class="exercise-image" id="exerciseImageContainer"></div>
+    <div class="exercise-input">
+      <label for="answer">Ingresa tu respuesta:</label>
+      <textarea id="answer"></textarea>
+    </div>
+    <div class="exercise-feedback" id="feedback"></div>
+    <button class="exercise-button" onclick="checkAnswer()">Verificar</button>
+    <br>
+    <button class="exercise-button" onclick="nextExercise()" id="nextButton" style="display: none;">Siguiente</button>
+  </div>
+
+  <a class="corner-link" href="http://www.w3.org/WAI/WCAG1A-Conformance" title="Explicación del Nivel A de Conformidad">
+    <img height="32" width="88" src="http://www.w3.org/WAI/wcag1A" alt="Icono de conformidad con el Nivel A, 
+    de las Directrices de Accesibilidad para 
+    el Contenido Web 1.0 del W3C-WAI">
+  </a>
+</body>
+
+</html>

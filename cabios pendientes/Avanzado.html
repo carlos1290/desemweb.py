@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Página Accesible</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="ScriptsVideos/Principiante.js"></script>
+</head>
+
+<body>
+  <header>
+    <a href="https://www.cdc.gov/ncbddd/spanish/autism/facts.html">
+      <img src="LogoTipo/ProgramAccess.png" alt="Logo de ProgramAccess" class="logo-img">
+    </a>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="ProyectoDis.html">Inicio</a></li>
+        <li><a href="Juegos.html">Juego</a></li>
+        <li class="dropdown">
+          <a href="#" class="nav-link programacion">Programación</a>
+          <div class="dropdown-content">
+            <a href="Principiante.html" class="index-module--link--34678">
+              <p class="pm"><b>Principiante</b></p>
+              <p class="pxs">Aprende lo básico en programación</p>
+            </a>
+            <a href="Intermedio.html" class="index-module--link--34678">
+              <p class="pm"><b>Intermedio</b></p>
+              <p class="pxs">Amplía tus conocimientos en programación</p>
+            </a>
+            <a href="Avanzado.html" class="index-module--link--34678">
+              <p class="pm"><b>Avanzado</b></p>
+              <p class="pxs">Para programadores con experiencia</p>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Programación avanzada para niños con autismo y personas con Deuteranopia</h2>
+      <p>Explora conceptos complejos como algoritmos avanzados y estructuras de datos eficientes.</p>
+      <p>Enfrenta los desafíos de la programación de alto nivel.</p>
+      <p>Aprende sobre algoritmos de búsqueda, ordenación, grafos y teoría de la complejidad.</p>
+      <p>Profundiza en la optimización de código y mejora la calidad del software.</p>
+      <p>Explora áreas especializadas como inteligencia artificial, aprendizaje automático y computación en la nube.</p>
+      <p>Al finalizar el curso, estarás preparado para enfrentar desafíos exigentes y desarrollar soluciones avanzadas.
+      </p>
+      <p>¡Acompáñanos en tu viaje hacia la programación avanzada y expande tus horizontes en el mundo de la tecnología,
+        incluyendo a personas con Deuteranopia en nuestro enfoque inclusivo!</p>
+    </section>
+  </main>
+
+
+  <div class="video-container">
+    <div class="video-slider">
+      <video id="videoPlayer" controls>
+        <source src="VideosEjercicios/AvanzadoParte1.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="video-controls">
+      <button onclick="prevVideo()">Anterior</button>
+      <button onclick="nextVideo()">Siguiente</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>ProgramAccess &copy; 2023</p>
+    <button onclick="window.location.href='EjerciciosAvanzado.html'">Ir a los ejercicios para avanzado</button>
+  </footer>
+
+  <a class="corner-link" href="http://www.w3.org/WAI/WCAG1A-Conformance" title="Explicación del Nivel A de Conformidad">
+    <img height="32" width="88" src="http://www.w3.org/WAI/wcag1A"
+      alt="Icono de conformidad con el Nivel A, de las Directrices de Accesibilidad para el Contenido Web 1.0 del W3C-WAI">
+  </a>
+
+  <script src="ScriptVideos/Avanzado.js"></script>
+</body>
+
+</html>
