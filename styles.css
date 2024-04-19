@@ -14,10 +14,11 @@ body {
 }
 
 header {
-  background-color: #ffffff;
+  background-color: #f8f9fa !important;
   padding: 30px;
   text-align: center;
   position: relative;
+  width: 100%;
 }
 
 .logo-img {
@@ -208,12 +209,9 @@ video {
   }
 }
 
-/* Estilo para mostrar el menú desplegable cuando se añade la clase "show" */
 .navbar-nav .dropdown-menu.show {
   display: block;
 }
-
-/* Ajuste para las sub-listas */
 .dropdown-submenu {
   position: relative;
 }
