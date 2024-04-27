@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendizaje de HTML</title>
+    <link rel="stylesheet" href="styles.html.lvl.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384- GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="py-12s">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+            <div class="container-fluid" id="container">
+                <a class="navbar-brand" href="https://www.cdc.gov/ncbddd/spanish/autism/facts.html">
+                    <img src="ProgramAccess.png" alt="Logo de ProgramAccess" class="logo-img">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+
+
+                            <a class="nav-link active" aria-current="true" href="../main/ProyectoDis.html>Inicio" >Inicio</a>/a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Juegos.html">Juego</a>ŧ̣ŧ̣̣̣̣̣̣̣̣̣̣̣̣̣̣̣̣̣̣
+                        </li>
+                        <li class="nav-item dropdown" id="menuProgramacion">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Curso
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="">HTML</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="html lvl/">Principiante</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="">Intermedio</a></li>
+                                        <li><a class="dropdown-item" href="html lvl/html.avanzado.html">Avanzado</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">CSS</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Principiante</a></li>
+                                        <li><a class="dropdown-item" href="#">Intermedio</a></li>
+                                        <li><a class="dropdown-item" href="#">Avanzado</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">JavaScript</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Principiante</a></li>
+                                        <li><a class="dropdown-item" href="#">Intermedio</a></li>
+                                        <li><a class="dropdown-item" href="#">Avanzado</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Iniciar Sesión</a>
+                        </li>
+                    </ul>
+
+        </nav>
+    </header>
+
+    <main>
+        <section>
+
+            <h4>Indice de HTML Principiante</h4>
+
+            <ol>
+                <li><a href="#estructura">Estructura básica de HTML</a></li>
+                <li><a href="#etiquetas">Etiquetas HTML</a></li>
+                <li><a href="#atributos">Atributos HTML</a></li>
+                <li><a href="#estructura_pagina">Estructura de la página web</a></li>
+                <li><a href="#enlaces_anclajes">Enlaces y anclajes</a></li>
+                <li><a href="#imagenes">Imágenes</a></li>
+                <li><a href="#listas">Listas</a></li>
+                <li><a href="#formularios">Formularios básicos</a></li>
+                <li><a href="#tablas">Estructura de tablas</a></li>
+                <li><a href="#comentarios">Comentarios HTML</a></li>
+                </l>
+        </section>
+        <section id="estructura">
+            <h2>Estructura básica de HTML</h2>
+            <p>HTML (HyperText Markup Language) es el lenguaje estándar para crear páginas web. Cada documento HTML
+                sigue una estructura básica que consta de varias etiquetas que proporcionan instrucciones al navegador
+                sobre cómo mostrar el contenido.</p>
+            <p>La estructura básica de un documento HTML incluye las siguientes etiquetas:</p>
+            <ul>
+                <li><code>&lt;!DOCTYPE html&gt;</code>: Declara la versión de HTML utilizada en el documento.</li>
+                <li><code>&lt;html&gt;</code>: Envuelve todo el contenido HTML del documento.</li>
+                <li><code>&lt;head&gt;</code>: Contiene metadatos como el título de la página, enlaces a hojas de estilo
+                    y scripts, entre otros.</li>
+                <li><code>&lt;title&gt;</code>: Define el título de la página que se muestra en la pestaña del
+                    navegador.</li>
+                <li><code>&lt;body&gt;</code>: Contiene el contenido visible de la página, como texto, imágenes,
+                    enlaces, etc.</li>
+            </ul>
+            <p>A continuación, se muestra un ejemplo de una estructura básica de HTML:</p>
+            <pre>
+                <code>&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Título de la página&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Mi primera página web&lt;/h1&gt;
+    &lt;p&gt;¡Hola, mundo!&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code>
+            </pre>
+        </section>
+
+        <section id="etiquetas">
+            <h2>Etiquetas HTML</h2>
+            <p>Las etiquetas HTML son los bloques de construcción fundamentales de una página web. Cada etiqueta
+                proporciona instrucciones al navegador sobre cómo mostrar diferentes partes del contenido.</p>
+            <p>Algunas etiquetas HTML comunes incluyen:</p>
+            <ul>
+                <li><code>&lt;p&gt;</code>: Define un párrafo de texto.</li>
+                <li><code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code>: Define encabezados de diferentes niveles de
+                    importancia.</li>
+                <li><code>&lt;a&gt;</code>: Crea un enlace a otra página web o recurso.</li>
+                <li><code>&lt;img&gt;</code>: Inserta una imagen en la página.</li>
+                <!-- Agregar más ejemplos -->
+            </ul>
+            <p>Por ejemplo, para crear un párrafo de texto en HTML, puedes usar la etiqueta <code>&lt;p&gt;</code> de la
+                siguiente manera:</p>
+            <pre><code>&lt;p&gt;Este es un párrafo de ejemplo.&lt;/p&gt;</code></pre>
+        </section>
+
+        <section id="atributos">
+            <h2>Atributos HTML</h2>
+            <p>Los atributos proporcionan información adicional sobre una etiqueta HTML. Se utilizan para personalizar
+                el comportamiento o la apariencia de la etiqueta.</p>
+            <p>Por ejemplo, el atributo <code>href</code> se utiliza en la etiqueta <code>&lt;a&gt;</code> para
+                especificar la URL de destino de un enlace. El atributo <code>src</code> se utiliza en la etiqueta
+                <code>&lt;img&gt;</code> para especificar la ruta de la imagen que se mostrará.
+            </p>
+            <p>A continuación, se muestra un ejemplo de cómo utilizar el atributo <code>href</code> en un enlace:</p>
+            <pre><code>&lt;a href="https://www.ejemplo.com"&gt;Enlace de ejemplo&lt;/a&gt;</code></pre>
+        </section>
+
+        <section id="estructura_pagina">
+            <h2>Estructura de la página web</h2>
+            <p>La estructura de una página web es crucial para su legibilidad, accesibilidad y SEO (optimización para
+                motores de búsqueda). HTML5 ofrece una serie de etiquetas semánticas que ayudan a organizar el contenido
+                de manera clara y significativa.</p>
+            <p>Algunas etiquetas semánticas comunes incluyen:</p>
+            <ul>
+                <li><code>&lt;header&gt;</code>: Define la cabecera de la página.</li>
+                <li><code>&lt;nav&gt;</code>: Define la sección de navegación.</li>
+                <li><code>&lt;main&gt;</code>: Define el contenido principal de la página.</li>
+                <li><code>&lt;footer&gt;</code>: Define el pie de página de la página.</li>
+                <!-- Agregar más ejemplos -->
+            </ul>
+            <p>Estas etiquetas ayudan a los motores de búsqueda y a los lectores de pantalla a comprender la estructura
+                y el contenido de la página. A continuación, se muestra un ejemplo de cómo utilizar algunas de estas
+                etiquetas:</p>
+            <pre><code>&lt;header&gt;
+    &lt;h1&gt;Título del sitio&lt;/h1&gt;
+    &lt;nav&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Inicio&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Acerca de&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Contacto&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+&lt;/header&gt;
+&lt;main&gt;
+    &lt;section&gt;
+        &lt;h2&gt;Título de la sección&lt;/h2&gt;
+        &lt;p&gt;Contenido de la sección.&lt;/p&gt;
+    &lt;/section&gt;
+&lt;/main&gt;
+&lt;footer&gt;
+    &lt;p&gt;Pie de página&lt;/p&gt;
+&lt;/footer&gt;</code></pre>
+        </section>
+
+        <section id="enlaces_anclajes">
+            <h2>Enlaces y anclajes</h2>
+            <p>Los enlaces son fundamentales para la navegación web, permitiendo a los usuarios acceder a diferentes
+                páginas y recursos. En HTML, los enlaces se crean utilizando la etiqueta <code>&lt;a&gt;</code>, con el
+                atributo <code>href</code> especificando la URL de destino.</p>
+            <p>Para enlazar a una sección específica de una página, se utilizan los anclajes. Se pueden crear anclajes
+                utilizando la etiqueta <code>&lt;a&gt;</code> con el atributo <code>href</code> apuntando al ID de la
+                sección.</p>
+            <p>A continuación, se muestra un ejemplo de cómo crear un enlace y un anclaje:</p>
+            <pre><code>&lt;a href="https://www.ejemplo.com"&gt;Enlace externo&lt;/a&gt;
+&lt;a href="#seccion-1"&gt;Ir a la sección 1&lt;/a&gt;
+
+...
+
+&lt;h2 id="seccion-1"&gt;Sección 1&lt;/h2&gt;</code></pre>
+        </section>
+
+        <section id="imagenes">
+            <h2>Imágenes</h2>
+            <p>Las imágenes son componentes importantes de una página web, ya que pueden mejorar la estética y la
+                comprensión del contenido. En HTML, las imágenes se insertan utilizando la etiqueta
+                <code>&lt;img&gt;</code>.
+            </p>
+            <p>La etiqueta <code>&lt;img&gt;</code> requiere el atributo <code>src</code>, que especifica la ruta de la
+                imagen, y opcionalmente los atributos <code>alt</code>, <code>width</code> y <code>height</code>.</p>
+            <p>A continuación, se muestra un ejemplo de cómo insertar una imagen:</p>
+            <pre><code>&lt;img src="imagen.jpg" alt="Descripción de la imagen" width="100" height="100"&gt;</code></pre>
+        </section>
+
+        <section id="listas">
+            <h2>Listas</h2>
+            <p>Las listas son útiles para organizar y presentar información de manera estructurada. En HTML, se pueden
+                crear listas ordenadas utilizando la etiqueta <code>&lt;ol&gt;</code> y listas no ordenadas utilizando
+                la etiqueta <code>&lt;ul&gt;</code>.</p>
+            <p>Para cada elemento de la lista, se utiliza la etiqueta <code>&lt;li&gt;</code>.</p>
+            <p>A continuación, se muestra un ejemplo de cómo crear una lista ordenada y una lista no ordenada:</p>
+            <pre><code>&lt;ol&gt;
+    &lt;li&gt;Elemento 1&lt;/li&gt;
+    &lt;li&gt;Elemento 2&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;Elemento A&lt;/li&gt;
+    &lt;li&gt;Elemento B&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+        </section>
+
+        <section id="formularios">
+            <h2>Formularios básicos</h2>
+            <p>Los formularios son elementos interactivos que permiten a los usuarios enviar datos al servidor. En HTML,
+                los formularios se crean utilizando la etiqueta <code>&lt;form&gt;</code>, y se pueden incluir varios
+                elementos de entrada como campos de texto, casillas de verificación, botones, etc.</p>
+            <p>Algunos elementos de formulario comunes incluyen <code>&lt;input&gt;</code>,
+                <code>&lt;textarea&gt;</code>, <code>&lt;select&gt;</code>, entre otros.
+            </p>
+            <p>A continuación, se muestra un ejemplo de cómo crear un formulario básico:</p>
+            <pre><code>&lt;form action="/procesar-datos" method="post"&gt;
+    &lt;label for="nombre"&gt;Nombre:&lt;/label&gt;
+    &lt;input type="text" id="nombre" name="nombre"&gt;
+    &lt;input type="submit" value="Enviar"&gt;
+&lt;/form&gt;</code></pre>
+        </section>
+
+        <section id="tablas">
+            <h2>Estructura de tablas</h2>
+            <p>Las tablas son útiles para organizar datos en filas y columnas. En HTML, las tablas se crean utilizando
+                las etiquetas <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code> y
+                <code>&lt;td&gt;</code>.
+            </p>
+            <p>La etiqueta <code>&lt;table&gt;</code> define la tabla en sí, <code>&lt;tr&gt;</code> define una fila,
+                <code>&lt;th&gt;</code> define una celda de encabezado y <code>&lt;td&gt;</code> define una celda de
+                datos.
+            </p>
+            <p>A continuación, se muestra un ejemplo de cómo crear una tabla:</p>
+            <pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Encabezado 1&lt;/th&gt;
+        &lt;th&gt;Encabezado 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Dato 1&lt;/td&gt;
+        &lt;td&gt;Dato 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+        </section>
+
+        <section id="comentarios">
+            <h2>Comentarios HTML</h2>
+            <p>Los comentarios son útiles para agregar notas o explicaciones en el código HTML sin que se muestren en la
+                página web. En HTML, los comentarios se crean utilizando la sintaxis
+                <code>&lt;!-- comentario --&gt;</code>.
+            </p>
+            <p>Los comentarios son útiles para hacer anotaciones para ti mismo o para otros desarrolladores que trabajen
+                en el mismo proyecto.</p>
+            <p>A continuación, se muestra un ejemplo de cómo agregar un comentario en HTML:</p>
+            <pre><code>&lt;!-- Este es un comentario en HTML --&gt;</code></pre>
+        </section>
+        <footer class="bg-dark text-light text-center py-3">
+            <p class="footer-text">ProgramAccess &copy; 2023</p>
+
+            <img height="32" width="88" src="http://www.w3.org/WAI/wcag1A"
+                alt="Icono de conformidad con el Nivel A, de las Directrices de Accesibilidad para el Contenido Web 1.0 del W3C-WAI">
+
+        </footer>
+        </div>
+        <script src="menudesplegable.html-lvl.js"></script>
+</body>
+
+</html>
