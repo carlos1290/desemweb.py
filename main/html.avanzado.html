@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendizaje de HTML - Nivel Avanzado</title>
+    <link rel="stylesheet" href="/style/styles.html.lvl.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384- GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header class="py-12s">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+            <div class="container-fluid" id="container">
+                <a class="navbar-brand" href="https://www.cdc.gov/ncbddd/spanish/autism/facts.html">
+                    <img src="LogoTipo/ProgramAccess.png" alt="Logo de ProgramAccess" class="logo-img">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="true" href="ProyectoDis.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown" id="menuJuegos">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Juegos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="Juego1.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="Juego2.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="Juego3.html">JavaScript</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown" id="menuProgramacion">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Curso
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="">HTML</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="hTmL.baSICO.HTML">Principiante</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="html.intermedio.html">Intermedio</a></li>
+                                        <li><a class="dropdown-item" href="html.avanzado.html">Avanzado</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">CSS</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Principiante</a></li>
+                                        <li><a class="dropdown-item" href="#">Intermedio</a></li>
+                                        <li><a class="dropdown-item" href="#">Avanzado</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">JavaScript</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Principiante</a></li>
+                                        <li><a class="dropdown-item" href="#">Intermedio</a></li>
+                                        <li><a class="dropdown-item" href="#">Avanzado</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Iniciar Sesión</a>
+                        </li>
+                    </ul>
+
+        </nav>
+    </header>
+
+    <main class="container mt-5">
+
+
+        <h4>Índice de HTML Avanzado</h4>
+        <ol>
+            <li>
+                <a href="#estructura">Estructura</a>
+            </li>
+            <li>
+                <a href="#etiquetas">Etiquetas</a>
+            </li>
+            <li>
+                <a href="#formularios">Formularios</a>
+            </li>
+            <li>
+                <a href="#tablas">Tablas</a>
+            </li>
+            <li>
+                <a href="#enlaces">Enlaces</a>
+            </li>
+        </ol>
+        <section id="estructura">
+            <h2>Estructura Avanzada de HTML</h2>
+            <p>La estructura de una página web es crucial para su éxito en los motores de búsqueda y su accesibilidad.
+                En un nivel avanzado, se requiere un enfoque meticuloso para garantizar que la estructura HTML esté
+                optimizada para maximizar la visibilidad en los resultados de búsqueda y mejorar la experiencia del
+                usuario.</p>
+            <p>Se abordarán técnicas avanzadas como la optimización de etiquetas meta, la implementación de datos
+                estructurados con microformatos y JSON-LD, y estrategias para mejorar el rendimiento mediante la carga
+                diferida de recursos.</p>
+            <p>Además, se explorarán prácticas recomendadas para la organización del código HTML, como el uso de
+                etiquetas semánticas y la implementación de esquemas de datos estructurados para mejorar la indexación
+                en los motores de búsqueda.</p>
+        </section>
+
+        <section id="etiquetas">
+            <h2>Etiquetas HTML para Profesionales</h2>
+            <p>Este apartado profundiza en algunas etiquetas HTML menos conocidas pero poderosas, fundamentales para la
+                creación de contenido web avanzado.</p>
+
+            <h3><code>&lt;details&gt;</code> y <code>&lt;summary&gt;</code></h3>
+            <p>Estas etiquetas son perfectas para crear contenido desplegable en una página web, proporcionando una
+                manera elegante de mostrar y ocultar información adicional. Son útiles para crear acordeones, menús
+                desplegables y secciones colapsables en una página.</p>
+
+            <h3><code>&lt;time&gt;</code></h3>
+            <p>La etiqueta <code>&lt;time&gt;</code> es especialmente útil para marcar fechas y horas en el contenido
+                web. Además de proporcionar una estructura semántica para la información temporal, también ofrece
+                beneficios de accesibilidad al permitir a los usuarios interpretar y navegar por el contenido más
+                fácilmente.</p>
+
+            <h3><code>&lt;progress&gt;</code></h3>
+            <p>La etiqueta <code>&lt;progress&gt;</code> nos permite crear barras de progreso en nuestras páginas web.
+                Es especialmente útil cuando queremos mostrar visualmente el avance de una tarea o el estado de una
+                operación en tiempo real, como la carga de un archivo o el progreso de un formulario.</p>
+
+            <!-- Más información sobre otras etiquetas avanzadas -->
+
+        </section>
+
+        <section id="formularios">
+            <h2>Formularios Profesionales</h2>
+            <p>Este apartado explora la implementación avanzada de formularios HTML, incluyendo técnicas sofisticadas
+                para mejorar la interactividad y la seguridad en la web.</p>
+
+            <h3>Validación Personalizada con JavaScript</h3>
+            <p>Una parte integral de los formularios avanzados es la validación personalizada utilizando JavaScript.
+                Esta técnica permite validar los datos ingresados por el usuario en tiempo real, proporcionando
+                retroalimentación instantánea y mejorando la experiencia del usuario.</p>
+
+            <h3>Integración con Bibliotecas de Validación</h3>
+            <p>Además de la validación personalizada, se explorará la integración con bibliotecas de validación de
+                terceros como Parsley.js. Estas bibliotecas ofrecen funcionalidades adicionales y facilitan la
+                implementación de reglas de validación complejas.</p>
+
+            <h3>Técnicas para Crear Formularios Dinámicos</h3>
+            <p>Los formularios dinámicos permiten una interacción más fluida con el usuario, actualizando el contenido
+                de forma automática sin necesidad de recargar la página. Se abordarán técnicas avanzadas para crear
+                formularios dinámicos utilizando tecnologías como AJAX y WebSockets.</p>
+
+            <!-- Más información sobre otras técnicas de formularios avanzados -->
+
+        </section>
+
+        <section id="tablas">
+            <h2>Tablas para Expertos</h2>
+            <p>Este apartado domina las tablas HTML con técnicas avanzadas como la clasificación, filtrado y paginación,
+                utilizando bibliotecas especializadas como DataTables.js.</p>
+            <p>Profundizaremos en la creación de tablas dinámicas y responsivas utilizando los recursos proporcionados
+                por frameworks frontend como Bootstrap y potenciados con librerías de JavaScript como jQuery. Estas
+                técnicas permiten construir tablas adaptables a diferentes dispositivos y resoluciones, asegurando una
+                experiencia óptima para todos los usuarios.</p>
+            <p>Además, se explorarán estrategias para mejorar la accesibilidad de las tablas, especialmente para
+                usuarios con discapacidades visuales u otras necesidades especiales. Se utilizarán atributos ARIA
+                (Accessible Rich Internet Applications) para describir la estructura y el contenido de la tabla de
+                manera que sea comprensible para lectores de pantalla y otros dispositivos de asistencia.</p>
+        </section>
+
+        <section id="enlaces">
+            <h2>Enlaces Avanzados</h2>
+            <p>Este apartado examina técnicas avanzadas para enlaces HTML, incluyendo enlaces de descarga directa,
+                enlaces de referencia cruzada y la implementación de enlaces profundos en aplicaciones web.</p>
+            <p>Los enlaces son la base de la navegación web. Se explorarán técnicas avanzadas para mejorar la usabilidad
+                y la accesibilidad de los enlaces, como la creación de enlaces de descarga directa para archivos, la
+                especificación de idioma y relaciones con atributos hreflang y rel, y la implementación de enlaces
+                profundos para mejorar la navegación en aplicaciones web complejas.</p>
+            <p>Además de los enlaces estándar, HTML ofrece una variedad de técnicas avanzadas para mejorar la
+                experiencia del usuario y la funcionalidad de navegación. Por ejemplo, los enlaces de descarga directa
+                permiten a los usuarios descargar archivos directamente desde la web con un solo clic. Esto es útil para
+                proporcionar documentos, imágenes, videos u otros tipos de archivos para su descarga sin necesidad de
+                redireccionar a los usuarios a otra página.</p>
+            <p>Los enlaces de referencia cruzada son esenciales para conectar contenido relacionado en diferentes partes
+                de un sitio web o entre sitios web. Los atributos hreflang y rel se utilizan para indicar el idioma y la
+                relación entre las páginas vinculadas, lo que ayuda a los motores de búsqueda a comprender la estructura
+                y la relevancia del contenido.</p>
+            <p>Para mejorar la navegación en aplicaciones web complejas, los enlaces profundos permiten a los usuarios
+                acceder directamente a secciones específicas o funciones dentro de una aplicación. Esto se logra
+                mediante la incorporación de información contextual en la URL, que la aplicación puede interpretar y
+                utilizar para mostrar la interfaz de usuario correspondiente.</p>
+            <p>En resumen, dominar las técnicas avanzadas de enlaces HTML es fundamental para crear experiencias de
+                usuario fluidas y optimizadas en la web moderna.</p>
+        </section>
+
+        <section id="estructura">
+            <h2>Estructura Básica de HTML</h2>
+            <p>Revisión de la estructura básica de HTML y su importancia en la creación de páginas web bien
+                formadas.
+                Incluye conceptos avanzados como metaetiquetas para SEO y declaraciones condicionales para
+                compatibilidad con navegadores antiguos.</p>
+            <!-- Contenido adicional sobre la estructura básica -->
+            <p>Además, se explorarán técnicas para mejorar la accesibilidad, como el uso adecuado de etiquetas
+                semánticas y la implementación de atributos ARIA.</p>
+        </section>
+
+        <section id="etiquetas">
+            <h2>Etiquetas HTML Avanzadas</h2>
+            <p>Exploración de etiquetas HTML avanzadas como <code>&lt;canvas&gt;</code> para gráficos interactivos,
+                <code>&lt;video&gt;</code> y <code>&lt;audio&gt;</code> para contenido multimedia, y
+                <code>&lt;svg&gt;</code> para gráficos vectoriales escalables.
+            </p>
+            <!-- Contenido adicional sobre etiquetas HTML avanzadas -->
+            <p>Se incluirán ejemplos prácticos de uso de estas etiquetas en proyectos web reales, así como consejos
+                para
+                su implementación efectiva.</p>
+        </section>
+
+        <section id="formularios">
+            <h2>Formularios Avanzados</h2>
+            <p>Uso avanzado de formularios HTML, incluyendo campos de entrada personalizados con
+                <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code> y <code>&lt;select&gt;</code>, validación
+                de
+                datos con atributos como <code>required</code> y <code>pattern</code>, y técnicas de accesibilidad
+                con
+                etiquetas como <code>&lt;fieldset&gt;</code> y <code>&lt;legend&gt;</code>.
+            </p>
+            <!-- Contenido adicional sobre formularios avanzados -->
+            <p>Se abordarán temas como la creación de formularios responsivos y su integración con tecnologías de
+                backend para la gestión de datos.</p>
+        </section>
+
+        <section id="tablas">
+            <h2>Tablas Avanzadas</h2>
+            <p>Implementación de tablas HTML más complejas, incluyendo columnas combinadas con
+                <code>&lt;colspan&gt;</code> y <code>&lt;rowspan&gt;</code>, filas de encabezado con
+                <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code> y <code>&lt;tfoot&gt;</code>, y estilos
+                avanzados
+                con CSS para tablas.
+            </p>
+            <!-- Contenido adicional sobre tablas avanzadas -->
+            <p>Se mostrarán técnicas para mejorar la usabilidad y la legibilidad de las tablas, así como su
+                accesibilidad para usuarios con discapacidades visuales.</p>
+        </section>
+
+        <section id="enlaces">
+            <h2>Enlaces Avanzados</h2>
+            <p>Creación de enlaces avanzados utilizando atributos como <code>target</code> para abrir enlaces en una
+                nueva ventana o pestaña, <code>rel</code> para relaciones de enlace como <code>nofollow</code> para
+                SEO,
+                y prácticas recomendadas de accesibilidad como <code>aria-label</code> para usuarios con
+                discapacidades
+                visuales.</p>
+            <!-- Contenido adicional sobre enlaces avanzados -->
+            <p>Se discutirá sobre la importancia de los enlaces en la navegación web y cómo optimizar su uso para
+                mejorar la experiencia del usuario.</p>
+        </section>
+
+        <!-- Duplicación del contenido -->
+
+        <section id="estructura">
+            <h2>Estructura Básica de HTML</h2>
+            <p>Revisión de la estructura básica de HTML y su importancia en la creación de páginas web bien
+                formadas.
+                Incluye conceptos avanzados como metaetiquetas para SEO y declaraciones condicionales para
+                compatibilidad con navegadores antiguos.</p>
+            <!-- Contenido adicional sobre la estructura básica -->
+            <p>Además, se explorarán técnicas para mejorar la accesibilidad, como el uso adecuado de etiquetas
+                semánticas y la implementación de atributos ARIA.</p>
+        </section>
+
+        <section id="etiquetas">
+            <h2>Etiquetas HTML Avanzadas</h2>
+            <p>Exploración de etiquetas HTML avanzadas como <code>&lt;canvas&gt;</code> para gráficos interactivos,
+                <code>&lt;video&gt;</code> y <code>&lt;audio&gt;</code> para contenido multimedia, y
+                <code>&lt;svg&gt;</code> para gráficos vectoriales escalables.
+            </p>
+            <!-- Contenido adicional sobre etiquetas HTML avanzadas -->
+            <p>Se incluirán ejemplos prácticos de uso de estas etiquetas en proyectos web reales, así como consejos
+                para
+                su implementación efectiva.</p>
+        </section>
+
+        <section id="formularios">
+            <h2>Formularios Avanzados</h2>
+            <p>Uso avanzado de formularios HTML, incluyendo campos de entrada personalizados con
+                <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code> y <code>&lt;select&gt;</code>, validación
+                de
+                datos con atributos como <code>required</code> y <code>pattern</code>, y técnicas de accesibilidad
+                con
+                etiquetas como <code>&lt;fieldset&gt;</code> y <code>&lt;legend&gt;</code>.
+            </p>
+            <!-- Contenido adicional sobre formularios avanzados -->
+            <p>Se abordarán temas como la creación de formularios responsivos y su integración con tecnologías de
+                backend para la gestión de datos.</p>
+        </section>
+
+        <section id="tablas">
+            <h2>Tablas Avanzadas</h2>
+            <p>Implementación de tablas HTML más complejas, incluyendo columnas combinadas con
+                <code>&lt;colspan&gt;</code> y <code>&lt;rowspan&gt;</code>, filas de encabezado con
+                <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code> y <code>&lt;tfoot&gt;</code>, y estilos
+                avanzados
+                con CSS para tablas.
+            </p>
+            <!-- Contenido adicional sobre tablas avanzadas -->
+            <p>Se mostrarán técnicas para mejorar la usabilidad y la legibilidad de las tablas, así como su
+                accesibilidad para usuarios con discapacidades visuales.</p>
+        </section>
+
+        <section id="enlaces">
+            <h2>Enlaces Avanzados</h2>
+            <p>Creación de enlaces avanzados utilizando atributos como <code>target</code> para abrir enlaces en una
+                nueva ventana o pestaña, <code>rel</code> para relaciones de enlace como <code>nofollow</code> para
+                SEO,
+                y prácticas recomendadas de accesibilidad como <code>aria-label</code> para usuarios con
+                discapacidades
+                visuales.</p>
+            <!-- Contenido adicional sobre enlaces avanzados -->
+            <p>Se discutirá sobre la importancia de los enlaces en la navegación web y cómo optimizar su uso para
+                mejorar la experiencia del usuario.</p>
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-light py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Aprendizaje de HTML - Nivel Avanzado. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-xe3SLyUvxtJLdZt6v5Dz3DHJtd3lzxjBzhnHsHWEfTrQOlt2oUsCP9ERzW1xUWB2"
+        crossorigin="anonymous"></script>
+    <script src="/script-general.js/menudesplegable.h-lvl.js"></script>
+</body>
+
+</html>

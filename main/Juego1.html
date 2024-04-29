@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Preguntas y Respuestas HTML</title>
+    <link rel="stylesheet" href="/style/styleJuego.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+    <main id="main-inicio">
+        <header class="py-12s">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+                <div class="container-fluid" id="container">
+                    <a class="navbar-brand" href="https://www.cdc.gov/ncbddd/spanish/autism/facts.html">
+                        <img src="LogoTipo/ProgramAccess.png" alt="Logo de ProgramAccess" class="logo-img">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="true" href="ProyectoDis.html">Inicio</a>
+                            </li>
+                            <li class="nav-item dropdown" id="menuJuegos">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Juegos
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="Juego1.html">HTML</a></li>
+                                    <li><a class="dropdown-item" href="Juego2.html">CSS</a></li>
+                                    <li><a class="dropdown-item" href="Juego3.html">JavaScript</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown" id="menuProgramacion">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Curso
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="">HTML</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="hTmL.baSICO.HTML">Principiante</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="html.intermedio.html">Intermedio</a></li>
+                                            <li><a class="dropdown-item" href="html.avanzado.html">Avanzado</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="#">CSS</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Principiante</a></li>
+                                            <li><a class="dropdown-item" href="#">Intermedio</a></li>
+                                            <li><a class="dropdown-item" href="#">Avanzado</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="#">JavaScript</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Principiante</a></li>
+                                            <li><a class="dropdown-item" href="#">Intermedio</a></li>
+                                            <li><a class="dropdown-item" href="#">Avanzado</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="login.html">Iniciar Sesión</a>
+                            </li>
+                        </ul>
+
+            </nav>
+        </header>
+
+        <br>
+        <br>
+        <!-- Pantalla de inicio del juego -->
+        <div class="container text-center">
+            <h1 class="display-4 mb-4">¡Bienvenido al Juego de Preguntas y Respuestas HTML!</h1>
+            <p class="lead mb-4">Demuestra tus conocimientos sobre HTML mientras te diviertes.</p>
+            <Div>
+                <img src="LogoTipo/logohtml.png" alt="" class="logohtml">
+            </Div>
+            <button class="btn btn-primary btn-lg" id="iniciobtn" onclick="iniciarJuego()">Iniciar Juego</button>
+        </div>
+    </main>
+
+    <main id="main-juego" style="display: none;">
+
+        <h1>Juego de Preguntas y Respuestas HTML</h1>
+        <section id="preguntas">
+            <h2>Preguntas</h2>
+            <ol>
+
+                <!-- Preguntas de nivel principiante -->
+                <li>
+                    <h3>¿Cuál es la etiqueta que se utiliza para definir un encabezado de nivel 1 en HTML?</h3>
+                    <ul class="lista-respuestas">
+                        <li><button class="btn-respuesta" onclick="respuestaCorrecta(this)">a) &lt;h1&gt;</button></li>
+                        <li><button class="btn-respuesta" onclick="respuestaIncorrecta(this)">b) &lt;header&gt;</button>
+                        </li>
+                        <li><button class="btn-respuesta" onclick="respuestaCorrecta(this)">c) &lt;h2&gt;</button></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>¿Qué etiqueta se utiliza para insertar una imagen en una página web?</h3>
+                    <ul class="lista-respuestas">
+                        <li><button class="btn-respuesta" onclick="respuestaCorrecta(this)">a) &lt;img&gt;</button></li>
+                        <li><button class="btn-respuesta" onclick="respuestaIncorrecta(this)">b)
+                                &lt;picture&gt;</button></li>
+                        <li><button class="btn-respuesta" onclick="respuestaIncorrecta(this)">c) &lt;image&gt;</button>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>¿Cómo se crea un enlace en HTML?</h3>
+                    <ul class="lista-respuestas">
+                        <li><button class="btn-respuesta" onclick="respuestaIncorrecta(this)">a) &lt;link&gt;</button>
+                        </li>
+                        <li><button class="btn-respuesta" onclick="respuestaCorrecta(this)">b) &lt;a&gt;</button></li>
+                        <li><button class="btn-respuesta" onclick="respuestaIncorrecta(this)">c) &lt;href&gt;</button>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Preguntas de nivel intermedio -->
+                <li>
+                    <h3>¿Cuál es la diferencia entre las etiquetas &lt;div&gt; y &lt;span&gt; en HTML?</h3>
+                    <ul class="lista-respuestas">
+                        <li><button class="btn-respuesta" onclick="respuestaIncorrecta(this)">a) No hay diferencia, son
+                                iguales</button></li>
+                        <li><button class="btn-respuesta" onclick="respuestaCorrecta(this)">b) &lt;div&gt; es un bloque
+                                y &lt;span&gt; es en línea</button></li>
+                        <li><button class="btn-respuesta" onclick="respuestaIncorrecta(this)">c) &lt;div&gt; se usa para
+                                texto y &lt;span&gt; para imágenes</button></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>¿Qué es el atributo "href" y para qué se utiliza en la etiqueta &lt;a&gt;?</h3>
+                    <ul class="lista-respuestas">
+                        <li><button class="btn-respuesta" onclick="respuestaCorrecta(this)">a) Especifica la URL a la
+                                que enlaza el hipervínculo</button></li>
+                        <li><button class="btn-respuesta" onclick="respuestaIncorrecta(this)">b) Define el tamaño de la
+                                imagen</button></li>
+                        <li><button class="btn-respuesta" onclick="respuestaIncorrecta(this)">c) Controla el estilo del
+                                enlace</button></li>
+                    </ul>
+                </li>
+
+                <!-- Preguntas de nivel avanzado -->
+                <li>
+                    <h3>¿Cuál es la diferencia entre las etiquetas &lt;meta charset="UTF-8"&gt; y &lt;meta
+                        http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;?</h3>
+                    <ul class="lista-respuestas">
+                        <li><button class="btn-respuesta" onclick="respuestaIncorrecta(this)">a) No hay diferencia,
+                                ambas especifican el juego de caracteres UTF-8</button></li>
+                        <li><button class="btn-respuesta" onclick="respuestaCorrecta(this)">b) La primera especifica el
+                                juego de caracteres directamente, mientras que la segunda lo hace a través del atributo
+                                http-equiv</button></li>
+                        <li><button class="btn-respuesta" onclick="respuestaIncorrecta(this)">c) La primera se usa en
+                                HTML5 y la segunda en versiones anteriores</button></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>¿Qué es un elemento semántico en HTML y por qué es importante su uso?</h3>
+                    <ul class="lista-respuestas">
+                        <li><button class="btn-respuesta" onclick="respuestaCorrecta(this)">a) Es una etiqueta que
+                                proporciona significado al contenido y mejora la accesibilidad y SEO</button></li>
+                        <li><button class="btn-respuesta" onclick="respuestaIncorrecta(this)">b) Es una etiqueta que
+                                cambia el estilo visual del contenido</button></li>
+                        <li><button class="btn-respuesta" onclick="respuestaIncorrecta(this)">c) Es una etiqueta
+                                obsoleta que ya no se recomienda utilizar</button></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>¿Qué son las etiquetas &lt;header&gt;, &lt;footer&gt;, &lt;nav&gt; y &lt;section&gt; en HTML5 y
+                        cuál es su propósito en la estructura de una página web?</h3>
+                    <ul class="lista-respuestas">
+                        <li><button class="btn-respuesta" onclick="respuestaCorrecta(this)">a) Son elementos
+                                estructurales que ayudan a organizar el contenido de una página web de manera semántica,
+                                como encabezado, pie de página, navegación y sección de contenido</button></li>
+                        <li><button class="btn-respuesta" onclick="respuestaIncorrecta(this)">b) Son elementos
+                                decorativos para estilizar la página</button></li>
+                        <li><button class="btn-respuesta" onclick="respuestaIncorrecta(this)">c) Son elementos
+                                reservados para uso exclusivo de los motores de búsqueda</button></li>
+                    </ul>
+                </li>
+
+            </ol>
+        </section>
+
+    </main>
+
+    <main id="main-revision" style="display: none;">
+        <div class="container">
+            <h1>¡Felicidades, completaste todas las preguntas!</h1>
+            <p>Tu puntaje: <span id="puntaje-revision"></span></p>
+            <p>Tiempo transcurrido: <span id="tiempo-revision"></span> segundos</p>
+            <button class="btn btn-primary" onclick="reiniciarJuego()">Jugar de Nuevo</button>
+            <button class="btn btn-secondary" onclick="regresarInicio()">Regresar al Inicio</button>
+        </div>
+    </main>
+
+
+    <main id="main-finalizacion" style="display: none;">
+        <!---pantalla de finalizacion--->
+        <div class="containear">
+            <h1>Juego de Preguntas y Respuestas HTML</h1>
+
+            <p>Tu puntaje: <span id="puntaje"></span></p>
+            <p>Tiempo transcurrido: <span id="tiempo"></span> segundos</p>
+            <button class="btn btn-primary" onclick="reiniciarJuego()">Jugar de Nuevo</button>
+            <button class="btn btn-secondary" onclick="regresarInicio()">Regresar al Inicio</button>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-light text-center py-3">
+        <p class="footer-text">ProgramAccess &copy; 2023</p>
+
+        <img height="32" width="88" src="http://www.w3.org/WAI/wcag1A"
+            alt="Icono de conformidad con el Nivel A, de las Directrices de Accesibilidad para el Contenido Web 1.0 del W3C-WAI">
+    </footer>
+
+    <script src="/script-general.js/ScriptsJuegos/scriptsjuegohtml.js"></script>
+    <script src="/script-general.js/menudesplegable.h-lvl.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-xe3SLyUvxtJLdZt6v5Dz3DHJtd3lzxjBzhnHsHWEfTrQOlt2oUsCP9ERzW1xUWB2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
